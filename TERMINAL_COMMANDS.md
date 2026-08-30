@@ -57,14 +57,15 @@ npm run dev
 
 ---
 
-### 6. Git Commit & Push for Vercel Root Config
-* **Status:** ⏳ Ready for Execution
+### 6. Final Step for Vercel: Set Root Directory & Push
 * **Working Directory:** `d:\Projects\CoachingWebsite`
-* **Reason:** Push updated `vercel.json` and root `package.json` with root install command.
-* **Command to Run:**
+* **Why:** Setting **Root Directory: `frontend`** in Vercel tells Vercel's Next.js adapter to route all App Router pages (`/`, `/student`, `/teacher`, `/admin`) instead of serving raw internal `.next` chunks.
+* **1. In Vercel Dashboard (10 seconds):**
+  - Go to **[https://vercel.com/sht4bharats-projects/coaching-institute/settings](https://vercel.com/sht4bharats-projects/coaching-institute/settings)**
+  - In **Settings** → **General** → **Root Directory**, click **Edit**, enter `frontend`, and click **Save**.
+* **2. Terminal Push:**
 ```powershell
-cd d:\Projects\CoachingWebsite
 git add .
-git commit -m "fix(vercel): update install command to install root dependencies and frontend"
+git commit -m "fix(vercel): set clean root for vercel frontend root directory deployment"
 git push origin main
 ```
