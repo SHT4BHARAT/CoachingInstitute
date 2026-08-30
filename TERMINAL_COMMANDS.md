@@ -57,14 +57,14 @@ npm run dev
 
 ---
 
-### 6. Git Commit & Push for Vercel Next.js Detection
+### 6. Git Commit & Push for Vercel Root Config
 * **Status:** ⏳ Ready for Execution
 * **Working Directory:** `d:\Projects\CoachingWebsite`
-* **Reason:** Push root `package.json` with `next` dependencies so Vercel can detect the Next.js framework.
+* **Reason:** Push updated `vercel.json` and root `package.json` with root install command.
 * **Command to Run:**
 ```powershell
 cd d:\Projects\CoachingWebsite
 git add .
-git commit -m "fix(vercel): add next dependency in root package.json for vercel framework detection"
+git commit -m "fix(vercel): update install command to install root dependencies and frontend"
 git push origin main
 ```
