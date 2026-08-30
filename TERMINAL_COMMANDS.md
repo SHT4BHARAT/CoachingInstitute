@@ -57,13 +57,14 @@ npm run dev
 
 ---
 
-### 6. Git Commit Snapshot
-* **Status:** ⏳ Pending User Execution
+### 6. Git Commit & Push for Vercel Next.js Detection
+* **Status:** ⏳ Ready for Execution
 * **Working Directory:** `d:\Projects\CoachingWebsite`
-* **Reason:** Commit the complete Next.js TypeScript frontend implementation as requested in `docs/AGENTS.md`.
+* **Reason:** Push root `package.json` with `next` dependencies so Vercel can detect the Next.js framework.
 * **Command to Run:**
 ```powershell
 cd d:\Projects\CoachingWebsite
 git add .
-git commit -m "feat(frontend): implement presentation-ready Next.js 14+ MVP with DRM player, canvas notes, AI doubt desk, and MHT-CET CBT simulator"
+git commit -m "fix(vercel): add next dependency in root package.json for vercel framework detection"
+git push origin main
 ```
